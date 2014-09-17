@@ -1,0 +1,29 @@
+{
+  "name": "gulp-pseudo-i18n",
+  "version": "0.1.0",
+  "description": "Gulp plugin to generate pseudo translation from GNU gettext POT files",
+  "keywords": [
+    "gulpplugin",
+    "gettext",
+    "pseudo",
+    "i18n"
+  ],
+  "homepage": "https://github.com/7Pass/gulp-pseudo-i18n.git",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/7Pass/gulp-pseudo-i18n.git"
+  },
+  "main": "index.js",
+  "author": {
+    "name": "Tran Ngoc Van",
+    "url": "https://github.com/7Pass"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "through2": "~0.4.1",
+    "gulp-util": "~2.2.14",
+    "node-pseudo-i18n": "0.0.2",
+    "lodash": "~2.4.1"
+  },
+  "devDependencies": { },
+}
