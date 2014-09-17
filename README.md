@@ -23,3 +23,4 @@ gulp.task('pseudo', function () {
         }))
         .pipe(gulp.dest('po/'));
 });
+```
