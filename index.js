@@ -1,6 +1,6 @@
 'use strict';
 
-var pseudo = require('node-pseudo-i18n');
+var pseudo = require('node-pseudo-l10n');
 var gutil = require('gulp-util');
 var through = require('through2');
 var path = require('path');
