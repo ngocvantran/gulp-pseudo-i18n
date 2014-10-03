@@ -31,7 +31,7 @@ module.exports = function (options) {
     }
 
     var _this = this;
-    options.fileContents = file.contents.toString();
+	options.filePath = file.path;
     
     pseudo(options, function(err, poFileBuffer) {
       file.contents = poFileBuffer;
