@@ -38,8 +38,8 @@ Options
 * `charMap`: Custom charater map to create pseudo translation. Default: Map from [node-pseudo-l10n](https://github.com/maxnachlinger/node-pseudo-l10n).
 
 
-Charater Map Example
--------------------
+Character Map Example
+---------------------
 
 The following code
 
