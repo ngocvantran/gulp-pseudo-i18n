@@ -10,8 +10,13 @@ var pseudoTranslator = require('./lib/pseudo');
 var pluginName = require('./package.json').name;
 
 module.exports = function (options) {
+  var today = new Date();
   options = _.extend({}, options, {
-    language: 'qps-ploc'
+    language: 'pseudo language auto generated',
+    PO_Revision_Date: today.getDate()+"/"+(today.getMonth()+1)+"/"+today.getFullYear(),
+    Project_Id_Version: 'template',
+    Last_Translator: 'template auto generated',
+    language_team: 'template auto generated'
   });
 
   return through.obj(function (file, enc, cb) {
@@ -24,11 +29,15 @@ module.exports = function (options) {
       this.emit('error', new gutil.PluginError(pluginName, 'Streaming not supported'));
       return cb();
     }
-    
+
     // Parse PO/POT file
     var parsed = gettext.po.parse(file.contents);
     parsed.headers['language'] = options.language;
-    
+    parsed.headers['po-revision-date'] = options.PO_Revision_Date;
+    parsed.headers['project-id-version'] = options.Project_Id_Version;
+    parsed.headers['Last-Translator'] = options.Last_Translator;
+    parsed.headers['language-team'] = options.language_team;
+
     // Translate
     var translations = parsed.translations;
     var pseudo = pseudoTranslator(options.charMap, options.excludes);
