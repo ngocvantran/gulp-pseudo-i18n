@@ -1,6 +1,6 @@
 {
   "name": "gulp-pseudo-i18n",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Gulp plugin to generate pseudo translation from GNU gettext PO/POT files",
   "keywords": [
     "gulpplugin",
@@ -25,5 +25,8 @@
     "lodash": "^2.4.1",
     "through2": "~0.4.1"
   },
-  "devDependencies": { }
+  "devDependencies": {
+    "assert": "^1.3.0",
+    "gulp-util": "^2.2.20"
+  }
 }

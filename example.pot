@@ -1,0 +1,8 @@
+msgid ""
+msgstr ""
+
+msgid "This is a test"
+msgstr "This is a test"
+
+msgid "I am groot!"
+msgstr "I am groot!"
